@@ -1,7 +1,12 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+    val stud1: Float = 3f
+    val stud2: Float = 4f
+    val stud3: Float = 3f
+    val stud4: Float = 5f
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val totalStuds = 4
+
+    val averageMark = (stud1+stud2+stud3+stud4)/totalStuds
+
+    println("Average mark of class - $averageMark")
 }
