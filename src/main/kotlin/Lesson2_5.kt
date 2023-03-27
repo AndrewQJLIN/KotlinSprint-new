@@ -7,7 +7,9 @@ fun main() {
     val depositTime = 20
 
     val rateFormula = (1+rate/100)
-    var depositSum= (depositStartSum * rateFormula.pow(depositTime)*1000).roundToInt()*0.001
+    // var depositSum= (depositStartSum * rateFormula.pow(depositTime)*1000).roundToInt()*0.001
+    var depositSum = depositStartSum * rateFormula.pow(depositTime)
 
-    println("Сумма депозита с %% - $depositSum")
+    // println("Сумма депозита с %% - $depositSum")
+    println("%.3f".format(depositSum))
 }
