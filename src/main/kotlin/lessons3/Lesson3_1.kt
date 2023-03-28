@@ -9,3 +9,5 @@ fun main() {
     greetingText = "Good evening"
     println("$greetingText!, $userName")
 }
+
+// высылаю еще раз, так как было случайно отклонено
