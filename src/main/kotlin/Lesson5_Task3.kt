@@ -3,7 +3,7 @@ fun main() {
     val firstNumber = (START_NUMBER..END_NUMBER).random()
     var secondNumber = (START_NUMBER..END_NUMBER).random()
     while (firstNumber == secondNumber) {
-        secondNumber = (1..100).random()
+        secondNumber = (START_NUMBER..END_NUMBER).random()
     }
 
     println(
@@ -16,7 +16,8 @@ fun main() {
         var firstUserNumber = readln().toInt()
         println("Введите ВТОРОЕ число")
         val secondUserNumber = readln().toInt()
-        var result = 0
+        var result = if (firstUserNumber == 0 || secondUserNumber == 0) 3 else 0
+
         if (firstNumber == firstUserNumber || secondNumber == firstUserNumber) {
             result++
         }
@@ -25,7 +26,7 @@ fun main() {
         }
 
         val outputText = when (result) {
-            0 -> "До свидания!"
+            0 -> "Неудача! Крутите барабан!"
             1 -> {
                 firstUserNumber = 0; "Вы выиграли утешительный приз!"
             }
@@ -34,7 +35,7 @@ fun main() {
                 firstUserNumber = 0; "Поздравляем! Вы выиграли главный приз!"
             }
 
-            else -> "Неудача! Крутите барабан!"
+            else -> "До свидания!"
         }
         println(outputText)
 
