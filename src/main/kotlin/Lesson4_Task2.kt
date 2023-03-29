@@ -1,15 +1,19 @@
 fun main() {
 
-    val massGood_1 = 20
-    val massGood_2 = 50
+    val massGoodOne = 20
+    val massGoodTwo = 50
 
-    val volumeGood_1 = 80
-    val volumeGood_2 = 100
+    val volumeGoodOne = 80
+    val volumeGoodTwo = 100
 
-    println("Average для груза с весом $massGood_1 кг и объемом $volumeGood_1 литров:" +
-            "${massGood_1 >= WEIGHT_START && massGood_1 <= WEIGHT_END && volumeGood_1 < VOLUME_GOODS}")
-    println("Average для груза с весом $massGood_2 кг и объемом $volumeGood_2 литров:" +
-            "${massGood_2 >= WEIGHT_START && massGood_2 <= WEIGHT_END && volumeGood_2 < VOLUME_GOODS}")
+    println(
+        "Average для груза с весом $massGoodOne кг и объемом $volumeGoodOne литров:" +
+                "${massGoodOne >= WEIGHT_START && massGoodOne <= WEIGHT_END && volumeGoodOne < VOLUME_GOODS}"
+    )
+    println(
+        "Average для груза с весом $massGoodTwo кг и объемом $volumeGoodTwo литров:" +
+                "${massGoodTwo >= WEIGHT_START && massGoodTwo <= WEIGHT_END && volumeGoodTwo < VOLUME_GOODS}"
+    )
 
 }
 
