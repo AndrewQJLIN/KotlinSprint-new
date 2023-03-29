@@ -9,14 +9,26 @@ fun main() {
     val pressText = "Упражнения для пресса:"
     val trainingDay = 5
 
-    if(trainingDay % 2 == 0) {
+    if (trainingDay % 2 == 0) {
         hands = !hands
         legs = !legs
         back = !back
         press = !press
     }
 
-    print(String.format("%-22s %b%n%-22s %b%n%-22s %b%n%-22s %b%n",handText,hands,legsText,legs,backText,back,pressText,press))
+    print(
+        String.format(
+            "%-22s %b%n%-22s %b%n%-22s %b%n%-22s %b%n",
+            handText,
+            hands,
+            legsText,
+            legs,
+            backText,
+            back,
+            pressText,
+            press
+        )
+    )
 
 }
 
