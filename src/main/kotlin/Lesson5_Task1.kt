@@ -6,10 +6,7 @@ fun main() {
     val correctAnswer = digitOne + digitTwo
 
     println("Решите пример и напишите ответ: $digitOne + $digitTwo = ")
-    val outputText = if (correctAnswer == readln().toInt())
-        "Добро пожаловать!"
-    else "Доступ запрещен!"
+    val outputText = if (correctAnswer == readln().toInt()) "Добро пожаловать!" else "Доступ запрещен!"
 
     println(outputText)
-
 }
