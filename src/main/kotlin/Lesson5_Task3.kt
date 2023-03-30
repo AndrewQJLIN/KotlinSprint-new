@@ -1,46 +1,41 @@
 fun main() {
 
-    val firstNumber = (START_NUMBER..END_NUMBER).random()
-    var secondNumber = (START_NUMBER..END_NUMBER).random()
-    while (firstNumber == secondNumber) {
-        secondNumber = (START_NUMBER..END_NUMBER).random()
-    }
+    val gameNumbers = intArrayOf(0, 0)
+
+    do {
+        gameNumbers[0] = (START_NUMBER..END_NUMBER).random()
+        gameNumbers[1] = (START_NUMBER..END_NUMBER).random()
+    } while (gameNumbers[0] == gameNumbers[1])
 
     println(
         "Угадай два числа в диапазоне от ${START_NUMBER} до ${END_NUMBER} включительно\n" +
-                "Для завершения игры введите и/или первое или второе число  - 0 (ноль)"
+                "Для завершения игры введите - 0 (ноль)"
     )
 
     do {
+        var result = 0
+
         println("Введите ПЕРВОЕ число")
         var firstUserNumber = readln().toInt()
-        println("Введите ВТОРОЕ число")
-        val secondUserNumber = readln().toInt()
-        var result = if (firstUserNumber == 0 || secondUserNumber == 0) 3 else 0
+        if (firstUserNumber == 0) break;
+        else if (gameNumbers.contains(firstUserNumber)) result++
 
-        if (firstNumber == firstUserNumber || secondNumber == firstUserNumber) {
-            result++
-        }
-        if (firstNumber == secondUserNumber || secondNumber == secondUserNumber) {
-            result++
-        }
+        println("Введите ВТОРОЕ число")
+        if (gameNumbers.contains(readln().toInt())) result++
 
         val outputText = when (result) {
-            0 -> "Неудача! Крутите барабан!"
             1 -> {
                 firstUserNumber = 0; "Вы выиграли утешительный приз!"
             }
-
             2 -> {
                 firstUserNumber = 0; "Поздравляем! Вы выиграли главный приз!"
             }
-
-            else -> "До свидания!"
+            else -> "Неудача! Крутите барабан!"
         }
         println(outputText)
 
-    } while (firstUserNumber * secondUserNumber != 0)
-    println("Игра окончена\nБыли загаданы числа: $firstNumber и $secondNumber")
+    } while (firstUserNumber != 0)
+    println("Игра окончена\nБыли загаданы числа:" + gameNumbers[0] + " " + gameNumbers[1])
 
 }
 
