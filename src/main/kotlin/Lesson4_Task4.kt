@@ -1,22 +1,17 @@
 fun main() {
     val trainingDay = 5
 
-    val hands = !(trainingDay % 2 == 0)
+    val flagStatus = (trainingDay % 2 == 0)
+
+    val hands = !flagStatus
     val handText = "Упражнения для рук:"
-    val legs = (trainingDay % 2 == 0)
+    val legs = flagStatus
     val legsText = "Упражнения для ног:"
-    val back = (trainingDay % 2 == 0)
+    val back = flagStatus
     val backText = "Упражнения для спины:"
-    val press = !(trainingDay % 2 == 0)
+    val press = !flagStatus
     val pressText = "Упражнения для пресса:"
 
-
-//    if (trainingDay % 2 == 0) {
-//        hands = !hands
-//        legs = !legs
-//        back = !back
-//        press = !press
-//    }
 
     print(
         String.format(
