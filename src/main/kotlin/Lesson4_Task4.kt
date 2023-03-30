@@ -1,20 +1,22 @@
 fun main() {
-    var hands = true
-    val handText = "Упражнения для рук:"
-    var legs = false
-    val legsText = "Упражнения для ног:"
-    var back = false
-    val backText = "Упражнения для спины:"
-    var press = true
-    val pressText = "Упражнения для пресса:"
     val trainingDay = 5
 
-    if (trainingDay % 2 == 0) {
-        hands = !hands
-        legs = !legs
-        back = !back
-        press = !press
-    }
+    val hands = !(trainingDay % 2 == 0)
+    val handText = "Упражнения для рук:"
+    val legs = (trainingDay % 2 == 0)
+    val legsText = "Упражнения для ног:"
+    val back = (trainingDay % 2 == 0)
+    val backText = "Упражнения для спины:"
+    val press = !(trainingDay % 2 == 0)
+    val pressText = "Упражнения для пресса:"
+
+
+//    if (trainingDay % 2 == 0) {
+//        hands = !hands
+//        legs = !legs
+//        back = !back
+//        press = !press
+//    }
 
     print(
         String.format(
