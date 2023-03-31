@@ -1,28 +1,23 @@
 fun main() {
     val trainingDay = 5
 
-    val flagStatus = (trainingDay % 2 == 0)
+    val dayEvenOdd = trainingDay % 2 == 0
 
-    val hands = !flagStatus
-    val handText = "Упражнения для рук:"
-    val legs = flagStatus
-    val legsText = "Упражнения для ног:"
-    val back = flagStatus
-    val backText = "Упражнения для спины:"
-    val press = !flagStatus
-    val pressText = "Упражнения для пресса:"
-
+    val hands = !dayEvenOdd
+    val legs = dayEvenOdd
+    val back = dayEvenOdd
+    val press = !dayEvenOdd
 
     print(
         String.format(
             "%-22s %b%n%-22s %b%n%-22s %b%n%-22s %b%n",
-            handText,
+            "Упражнения для рук:",
             hands,
-            legsText,
+            "Упражнения для ног:",
             legs,
-            backText,
+            "Упражнения для спины:",
             back,
-            pressText,
+            "Упражнения для пресса:",
             press
         )
     )
