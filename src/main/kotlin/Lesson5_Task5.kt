@@ -2,7 +2,7 @@ fun main() {
     val gameNumbers = intArrayOf(0, 0)
 
     println(
-        "Угадай два числа в диапазоне от ${START_NUMBER} до ${END_NUMBER} включительно\n" +
+        "Угадай два числа в диапазоне от $START_NUMBER до $END_NUMBER включительно\n" +
                 "Для завершения игры введите - 0 (ноль)"
     )
 
@@ -17,7 +17,7 @@ fun main() {
 
         println("Введите ПЕРВОЕ число - или 0 для выхода")
         var firstUserNumber = readln().toInt()
-        if (firstUserNumber == 0) break;
+        if (firstUserNumber == 0) break
         else if (gameNumbers.contains(firstUserNumber)) result++
 
         println("Введите ВТОРОЕ число")
