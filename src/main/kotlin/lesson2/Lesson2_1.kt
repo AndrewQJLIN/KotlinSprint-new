@@ -1,3 +1,5 @@
+package lesson2
+
 fun main() {
     val stud1: Float = 3f
     val stud2: Float = 4f

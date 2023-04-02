@@ -1,4 +1,4 @@
-package lessons3
+package lesson3
 
 fun main() {
     var strokeNumber = 1

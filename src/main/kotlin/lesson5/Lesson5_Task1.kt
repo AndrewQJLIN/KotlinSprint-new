@@ -1,4 +1,4 @@
-import java.util.Random
+package lesson5
 
 fun main() {
     val digitOne: Int = (0..10).random()

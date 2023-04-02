@@ -1,3 +1,5 @@
+package lesson5
+
 fun main() {
 
     val gameNumbers = intArrayOf(0, 0)
@@ -8,7 +10,7 @@ fun main() {
     } while (gameNumbers[0] == gameNumbers[1])
 
     println(
-        "Угадай два числа в диапазоне от ${START_NUMBER} до ${END_NUMBER} включительно\n"
+        "Угадай два числа в диапазоне от $START_NUMBER до $END_NUMBER включительно\n"
     )
 
 

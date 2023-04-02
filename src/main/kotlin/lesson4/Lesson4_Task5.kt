@@ -1,4 +1,4 @@
-import java.util.Scanner
+package lesson4
 
 fun main() {
 

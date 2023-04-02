@@ -1,5 +1,6 @@
+package lesson2
+
 import kotlin.math.pow
-import kotlin.math.roundToInt
 
 fun main() {
     val depositStartSum = 70_000

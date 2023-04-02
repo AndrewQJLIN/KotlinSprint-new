@@ -1,3 +1,5 @@
+package lesson5
+
 fun main() {
     val gameNumbers = intArrayOf(0, 0)
 

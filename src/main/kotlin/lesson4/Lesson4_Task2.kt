@@ -1,3 +1,5 @@
+package lesson4
+
 fun main() {
 
     val massGoodOne = 20

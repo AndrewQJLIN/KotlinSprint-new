@@ -1,3 +1,5 @@
+package lesson2
+
 fun main() {
     val cristalOre:Int = 7
     val metallOre:Int = 11

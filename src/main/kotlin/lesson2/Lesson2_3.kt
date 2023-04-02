@@ -1,3 +1,5 @@
+package lesson2
+
 fun main() {
     val startHour = 9
     val startMinute = 39
