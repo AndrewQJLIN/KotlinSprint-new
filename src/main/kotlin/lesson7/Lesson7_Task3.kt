@@ -1,3 +1,5 @@
+package lesson7
+
 fun main() {
 
     println("Введите конечное число")

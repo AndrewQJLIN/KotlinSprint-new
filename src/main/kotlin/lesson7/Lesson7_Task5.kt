@@ -1,3 +1,5 @@
+package lesson7
+
 fun main() {
 
     val rangeDigit = 0..9

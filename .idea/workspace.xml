@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bf3d89b-6990-42b9-8f46-6855426230f7" name="Changes" comment="KS_5_5 - правки еще">
+    <list default="true" id="5bf3d89b-6990-42b9-8f46-6855426230f7" name="Changes" comment="KS_7_5 произвольная длина пароля">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson6_2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson6/Lesson6_2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson6_3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson6/Lesson6_3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson6_4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson6/Lesson6_4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson6_5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson6/Lesson6_5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson7_Task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Lesson7_Task5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lesson5/Lesson5_Task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson5/Lesson5_Task5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="KS_7_5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,40 +61,43 @@
       <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lessons3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson6" />
+      <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson2" />
+      <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson5" />
       <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson4" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Lesson5_Task5Kt">
-    <configuration name="Lesson5_Task1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson5.Lesson5_Task1Kt" />
+  <component name="RunManager" selected="Kotlin.Lesson7_Task5Kt">
+    <configuration name="Lesson7_Task1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson7.Lesson7_Task1Kt" />
       <module name="KotlinSprint-lesson2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson5_Task2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson5.Lesson5_Task2Kt" />
+    <configuration name="Lesson7_Task2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson7_Task2Kt" />
       <module name="KotlinSprint-lesson2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson5_Task3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson5.Lesson5_Task3Kt" />
+    <configuration name="Lesson7_Task3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson7.Lesson7_Task3Kt" />
       <module name="KotlinSprint-lesson2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson5_Task4Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson5.Lesson5_Task4Kt" />
+    <configuration name="Lesson7_Task4Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson7.Lesson7_Task4Kt" />
       <module name="KotlinSprint-lesson2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson5_Task5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson5.Lesson5_Task5Kt" />
+    <configuration name="Lesson7_Task5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson7.Lesson7_Task5Kt" />
       <module name="KotlinSprint-lesson2.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -96,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Lesson5_Task5Kt" />
-        <item itemvalue="Kotlin.Lesson5_Task4Kt" />
-        <item itemvalue="Kotlin.Lesson5_Task3Kt" />
-        <item itemvalue="Kotlin.Lesson5_Task2Kt" />
-        <item itemvalue="Kotlin.Lesson5_Task1Kt" />
+        <item itemvalue="Kotlin.Lesson7_Task5Kt" />
+        <item itemvalue="Kotlin.Lesson7_Task4Kt" />
+        <item itemvalue="Kotlin.Lesson7_Task3Kt" />
+        <item itemvalue="Kotlin.Lesson7_Task2Kt" />
+        <item itemvalue="Kotlin.Lesson7_Task1Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -112,13 +121,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679828013313</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <created>1679842389550</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679842389550</updated>
     </task>
     <task id="LOCAL-00002" summary="KS_2_1">
       <created>1679842974052</created>
@@ -379,7 +381,91 @@
       <option name="project" value="LOCAL" />
       <updated>1680358588610</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="KS_5_5 - правки еще">
+      <created>1680413485633</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1680413485633</updated>
+    </task>
+    <task id="LOCAL-00040" summary="master new">
+      <created>1680413724677</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1680413724677</updated>
+    </task>
+    <task id="LOCAL-00041" summary="KS_6_1 авторизация">
+      <created>1680415204370</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1680415204370</updated>
+    </task>
+    <task id="LOCAL-00042" summary="KS_6_2 счетчик">
+      <created>1680416337174</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1680416337174</updated>
+    </task>
+    <task id="LOCAL-00043" summary="KS_6_3 c текстом">
+      <created>1680416922263</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1680416922263</updated>
+    </task>
+    <task id="LOCAL-00044" summary="KS_6_4 угадываем с 5 попыток">
+      <created>1680417874083</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1680417874083</updated>
+    </task>
+    <task id="LOCAL-00045" summary="KS_6_5 3 попытки">
+      <created>1680418839230</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1680418839230</updated>
+    </task>
+    <task id="LOCAL-00046" summary="KS_7_1 простой пароль">
+      <created>1680543680176</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1680543680176</updated>
+    </task>
+    <task id="LOCAL-00047" summary="KS_7_2 смс код">
+      <created>1680544406854</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1680544406854</updated>
+    </task>
+    <task id="LOCAL-00048" summary="KS_7_3 четные числа">
+      <created>1680544758692</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1680544758692</updated>
+    </task>
+    <task id="LOCAL-00049" summary="KS_7_4 таймер">
+      <created>1680545236387</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1680545236387</updated>
+    </task>
+    <task id="LOCAL-00050" summary="KS_7_5 произвольная длина пароля">
+      <created>1680547663364</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1680547663364</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,7 +479,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="KS_4_4" />
+                        <option value="KS_6_5" />
                       </list>
                     </value>
                   </entry>
@@ -406,17 +492,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="KS_3_1 - из за случайного отклонения" />
-    <MESSAGE value="KS_3_4 = только 3 переменные" />
-    <MESSAGE value="KS_3_5 - новый парсинг" />
-    <MESSAGE value="KS_4_1 доступность столиков" />
-    <MESSAGE value="KS_4_2 Average" />
-    <MESSAGE value="KS_4_2 Average - исправил VAL - формат кода" />
-    <MESSAGE value="KS_4_2 Average - исправил имена" />
-    <MESSAGE value="KS_4_3 - бобовые" />
-    <MESSAGE value="KS_4_4 - упражнения" />
-    <MESSAGE value="KS_4_5 - корабль отплывает" />
-    <MESSAGE value="KS_5_1 вход по примеру" />
     <MESSAGE value="KS_5_2 вход по году рождения" />
     <MESSAGE value="KS_5_3 игра лотерея" />
     <MESSAGE value="KS_5_4 авторизация" />
@@ -431,6 +506,17 @@
     <MESSAGE value="KS_4_4 -без лишних переменных, нет скобок" />
     <MESSAGE value="KS_5_5 - правки" />
     <MESSAGE value="KS_5_5 - правки еще" />
-    <option name="LAST_COMMIT_MESSAGE" value="KS_5_5 - правки еще" />
+    <MESSAGE value="master new" />
+    <MESSAGE value="KS_6_1 авторизация" />
+    <MESSAGE value="KS_6_2 счетчик" />
+    <MESSAGE value="KS_6_3 c текстом" />
+    <MESSAGE value="KS_6_4 угадываем с 5 попыток" />
+    <MESSAGE value="KS_6_5 3 попытки" />
+    <MESSAGE value="KS_7_1 простой пароль" />
+    <MESSAGE value="KS_7_2 смс код" />
+    <MESSAGE value="KS_7_3 четные числа" />
+    <MESSAGE value="KS_7_4 таймер" />
+    <MESSAGE value="KS_7_5 произвольная длина пароля" />
+    <option name="LAST_COMMIT_MESSAGE" value="KS_7_5 произвольная длина пароля" />
   </component>
 </project>
