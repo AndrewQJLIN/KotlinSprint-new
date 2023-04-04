@@ -4,11 +4,10 @@ fun main() {
 
     do {
         val reciveCode = rangeNumbers.random()
-        println("Ваш код авторизации: $reciveCode\n")
+        println("Ваш код авторизации: $reciveCode")
         println("Введите, код полученный из СМС")
-        if (reciveCode == readln().toInt()) break
-        else println("Ошибка...")
-    } while (true)
+
+    } while (reciveCode != readln().toInt())
 
     println("Добро пожаловать")
 }
