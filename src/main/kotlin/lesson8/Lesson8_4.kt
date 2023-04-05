@@ -17,6 +17,6 @@ fun main() {
     println("Введите название нового ингредиента")
     receptOne[indexChange] = readln()
     println("Готово! Вы сохранили следующий список: ${receptOne.contentToString()}")
-    // receptOne.forEach {println(it)}
+
 
 }

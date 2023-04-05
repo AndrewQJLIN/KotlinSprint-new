@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bf3d89b-6990-42b9-8f46-6855426230f7" name="Changes" comment="KS_8_1">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lesson7/Lesson7_Task2.kt" afterDir="false" />
+    <list default="true" id="5bf3d89b-6990-42b9-8f46-6855426230f7" name="Changes" comment="KS_8_1_1">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lesson8/Lesson8_1-1.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson7_Task2.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lesson8/Lesson8_4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson8/Lesson8_4.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="KS_8_1_new" />
+        <entry key="$PROJECT_DIR$" value="KS_8_1_1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,27 +119,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679828013313</updated>
-    </task>
-    <task id="LOCAL-00011" summary="KS_3_4 шахматный ход">
-      <created>1679929724105</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679929724105</updated>
-    </task>
-    <task id="LOCAL-00012" summary="KS_3_5 распарсинг хода">
-      <created>1679930741832</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1679930741832</updated>
-    </task>
-    <task id="LOCAL-00013" summary="KS_3_1 - из за случайного отклонения">
-      <created>1680025285130</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1680025285130</updated>
     </task>
     <task id="LOCAL-00014" summary="KS_3_4 = только 3 переменные">
       <created>1680026051003</created>
@@ -461,7 +442,28 @@
       <option name="project" value="LOCAL" />
       <updated>1680689279665</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="KS_8_1">
+      <created>1680690908594</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1680690908594</updated>
+    </task>
+    <task id="LOCAL-00061" summary="KS_8_1_1">
+      <created>1680691515333</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1680691515333</updated>
+    </task>
+    <task id="LOCAL-00062" summary="KS_8_1_1">
+      <created>1680691834049</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1680691834049</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -475,7 +477,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="KS_8_1_new" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -486,9 +488,23 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="KS_5_3 через массив и поиск в нем" />
     <MESSAGE value="KS_4_4 не могу понять как присваивать к переменной флаг" />
     <MESSAGE value="KS_5_5 каждый раз новая пара для угадывания" />
     <MESSAGE value="KS_5_3 - вывод загаданных чисел после каждого раунда" />
@@ -513,6 +529,7 @@
     <MESSAGE value="KS_8_4 замена в списке" />
     <MESSAGE value="KS_8_5 список для рецепта" />
     <MESSAGE value="KS_8_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="KS_8_1" />
+    <MESSAGE value="KS_8_1_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="KS_8_1_1" />
   </component>
 </project>
