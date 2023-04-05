@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bf3d89b-6990-42b9-8f46-6855426230f7" name="Changes" comment="KS_7_5 произвольная длина пароля">
+    <list default="true" id="5bf3d89b-6990-42b9-8f46-6855426230f7" name="Changes" comment="KS_8_1">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lesson7/Lesson7_Task2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson6_2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson6/Lesson6_2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson6_3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson6/Lesson6_3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson6_4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson6/Lesson6_4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson6_5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson6/Lesson6_5.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Lesson7_Task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Lesson7_Task5.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lesson5/Lesson5_Task5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson5/Lesson5_Task5.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="KS_7_5" />
+        <entry key="$PROJECT_DIR$" value="KS_8_1_new" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,27 +56,14 @@
       <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lessons3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson7" />
       <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson6" />
       <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson2" />
       <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson5" />
       <recent name="C:\KotlinSprint\KotlinSprint-lesson2\src\main\kotlin\lesson4" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Lesson7_Task5Kt">
-    <configuration name="Lesson7_Task1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson7.Lesson7_Task1Kt" />
-      <module name="KotlinSprint-lesson2.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Lesson7_Task2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson7_Task2Kt" />
-      <module name="KotlinSprint-lesson2.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.Lesson8_1Kt">
     <configuration name="Lesson7_Task3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson7.Lesson7_Task3Kt" />
       <module name="KotlinSprint-lesson2.main" />
@@ -103,13 +85,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lesson8_1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson8.Lesson8_1Kt" />
+      <module name="KotlinSprint-lesson2.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson8_5Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson8.Lesson8_5Kt" />
+      <module name="KotlinSprint-lesson2.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Lesson8_5Kt" />
+        <item itemvalue="Kotlin.Lesson8_1Kt" />
         <item itemvalue="Kotlin.Lesson7_Task5Kt" />
         <item itemvalue="Kotlin.Lesson7_Task4Kt" />
         <item itemvalue="Kotlin.Lesson7_Task3Kt" />
-        <item itemvalue="Kotlin.Lesson7_Task2Kt" />
-        <item itemvalue="Kotlin.Lesson7_Task1Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -121,69 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679828013313</updated>
-    </task>
-    <task id="LOCAL-00002" summary="KS_2_1">
-      <created>1679842974052</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679842974052</updated>
-    </task>
-    <task id="LOCAL-00003" summary="KS_2_2">
-      <created>1679843124874</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679843124874</updated>
-    </task>
-    <task id="LOCAL-00004" summary="KS_2_3">
-      <created>1679843211746</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679843211746</updated>
-    </task>
-    <task id="LOCAL-00005" summary="KS_2_4">
-      <created>1679843279227</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679843279227</updated>
-    </task>
-    <task id="LOCAL-00006" summary="KS_2_5">
-      <created>1679843365361</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1679843365361</updated>
-    </task>
-    <task id="LOCAL-00007" summary="KS_2_5 - изменен вывод на без &quot;костылей&quot;">
-      <created>1679923878858</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1679923878858</updated>
-    </task>
-    <task id="LOCAL-00008" summary="KS_3_1 привет утром и вечером">
-      <created>1679926472275</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1679926472275</updated>
-    </task>
-    <task id="LOCAL-00009" summary="KS_3_2 девушка была 20 и стала 22">
-      <created>1679927402675</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1679927402675</updated>
-    </task>
-    <task id="LOCAL-00010" summary="KS_3_3 калькулятор принт">
-      <created>1679927828275</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1679927828275</updated>
     </task>
     <task id="LOCAL-00011" summary="KS_3_4 шахматный ход">
       <created>1679929724105</created>
@@ -465,7 +398,70 @@
       <option name="project" value="LOCAL" />
       <updated>1680547663364</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="урок 8">
+      <created>1680629183735</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1680629183735</updated>
+    </task>
+    <task id="LOCAL-00052" summary="KS_8_1 просмотры за неделю">
+      <created>1680629518398</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1680629518398</updated>
+    </task>
+    <task id="LOCAL-00053" summary="KS_8_1 просмотры за неделю">
+      <created>1680629773358</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1680629773358</updated>
+    </task>
+    <task id="LOCAL-00054" summary="KS_8_2 ищем ингредиент">
+      <created>1680633104778</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1680633104778</updated>
+    </task>
+    <task id="LOCAL-00055" summary="KS_8_3">
+      <created>1680633305641</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1680633305641</updated>
+    </task>
+    <task id="LOCAL-00056" summary="KS_8_4 замена в списке">
+      <created>1680634707797</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1680634707797</updated>
+    </task>
+    <task id="LOCAL-00057" summary="KS_8_5 список для рецепта">
+      <created>1680635392183</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1680635392183</updated>
+    </task>
+    <task id="LOCAL-00058" summary="KS_8_1">
+      <created>1680689032291</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1680689032291</updated>
+    </task>
+    <task id="LOCAL-00059" summary="KS_8_1">
+      <created>1680689279665</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1680689279665</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +475,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="KS_6_5" />
+                        <option value="KS_8_1_new" />
                       </list>
                     </value>
                   </entry>
@@ -492,13 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="KS_5_2 вход по году рождения" />
-    <MESSAGE value="KS_5_3 игра лотерея" />
-    <MESSAGE value="KS_5_4 авторизация" />
-    <MESSAGE value="KS_5_3 - исправлены ошибки" />
-    <MESSAGE value="KS_5_4 - без IF" />
-    <MESSAGE value="KS_5_1 - в одну строку" />
-    <MESSAGE value="KS_4_5 исправил на readln()" />
     <MESSAGE value="KS_5_3 через массив и поиск в нем" />
     <MESSAGE value="KS_4_4 не могу понять как присваивать к переменной флаг" />
     <MESSAGE value="KS_5_5 каждый раз новая пара для угадывания" />
@@ -517,6 +506,13 @@
     <MESSAGE value="KS_7_3 четные числа" />
     <MESSAGE value="KS_7_4 таймер" />
     <MESSAGE value="KS_7_5 произвольная длина пароля" />
-    <option name="LAST_COMMIT_MESSAGE" value="KS_7_5 произвольная длина пароля" />
+    <MESSAGE value="урок 8" />
+    <MESSAGE value="KS_8_1 просмотры за неделю" />
+    <MESSAGE value="KS_8_2 ищем ингредиент" />
+    <MESSAGE value="KS_8_3" />
+    <MESSAGE value="KS_8_4 замена в списке" />
+    <MESSAGE value="KS_8_5 список для рецепта" />
+    <MESSAGE value="KS_8_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="KS_8_1" />
   </component>
 </project>
