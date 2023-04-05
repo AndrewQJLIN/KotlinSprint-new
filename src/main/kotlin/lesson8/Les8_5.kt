@@ -10,4 +10,5 @@ fun main() {
         receptList.add(readln())
     }
     println("Ваш список ингредиентов")
+    println(receptList)
 }
