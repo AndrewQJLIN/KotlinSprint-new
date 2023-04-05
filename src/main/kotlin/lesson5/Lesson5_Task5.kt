@@ -45,6 +45,6 @@ fun main() {
 
 }
 
-//const val START_NUMBER = 1
-//const val END_NUMBER = 100
+//const val lesson6.START_NUMBER = 1
+//const val lesson6.END_NUMBER = 100
 const val STR_PAIR_NUMBERS_ = "Были загаданы числа: "
