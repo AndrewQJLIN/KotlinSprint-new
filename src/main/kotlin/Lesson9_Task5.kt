@@ -3,27 +3,27 @@ import java.util.Locale.*
 
 fun main() {
 
-    val listIngredient = mutableListOf<String>("", "", "", "", "")
+    val listIngredient = mutableSetOf<String>()
     println("Введите 5 уникальных (неповторяющихся) ингредиентов по-строчно")
 
     var indexListIngredient = 0
 
     do {
         val newIngredient = readln()
-        if (!listIngredient.contains(newIngredient)) {
-            listIngredient[indexListIngredient++] = newIngredient
-        } else {
+        if (listIngredient.add(newIngredient)) {
+            indexListIngredient++
+        }
+        else {
             println("Такой ингердиент - $newIngredient уже есть в списке.Введите новый")
         }
+
     } while (indexListIngredient < 5)
-    val finishListIngredient = listIngredient.sorted()
 
-    val lastIndex = finishListIngredient.size - 1
+    val finishListIngredient = listIngredient.sorted().toMutableList()
+    finishListIngredient[0] =
+        finishListIngredient[0].replaceFirstChar { if (it.isLowerCase()) it.titlecase(getDefault()) else it.toString() }
+    finishListIngredient[finishListIngredient.size-1] += "."
+    println(finishListIngredient)
 
-    print("${finishListIngredient[0].replaceFirstChar { if (it.isLowerCase()) it.titlecase(getDefault()) else it.toString() }}, ")
 
-    for (i in 1 until lastIndex)
-        print("${finishListIngredient[i]}, ")
-
-    println("${finishListIngredient[lastIndex]}.")
 }
