@@ -1,3 +1,5 @@
+package lesson10
+
 fun main() {
 
     var humanWin = roundGame()
@@ -12,12 +14,12 @@ fun main() {
     } while (true)
 }
 
-fun diceRoll(strRoll: String): Int {
-    val diceOne = (1..6).random()
-    val diceTwo = (1..6).random()
-    println("$strRoll\nВыпали кубики: $diceOne, $diceTwo")
-    return diceOne + diceTwo
-}
+//fun diceRoll(strRoll: String): Int {
+//    val diceOne = (1..6).random()
+//    val diceTwo = (1..6).random()
+//    println("$strRoll\nВыпали кубики: $diceOne, $diceTwo")
+//    return diceOne + diceTwo
+//}
 
 fun roundGame(): Int {
     return if (diceRoll("Ход компьютера") <= diceRoll("Ход человека")) {
