@@ -1,3 +1,5 @@
+package lesson10
+
 fun main() {
 
     if (diceRoll("Ход компьютера") <= diceRoll("Ход человека"))  println("Победило человечество")

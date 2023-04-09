@@ -1,3 +1,5 @@
+package lesson10
+
 fun main() {
     var userLogin = ""
     var userPassword = ""

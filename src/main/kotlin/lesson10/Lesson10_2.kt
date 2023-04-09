@@ -1,4 +1,4 @@
-
+package lesson10
 
 fun main() {
     println("Enter your LOGIN")

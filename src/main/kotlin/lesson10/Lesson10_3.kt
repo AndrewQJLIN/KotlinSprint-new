@@ -1,3 +1,5 @@
+package lesson10
+
 fun main() {
 
     println("Введите длину пароля")
