@@ -12,7 +12,7 @@ fun main() {
         else break
     } while (true)
 
-    userPassword = getPass(4)
+    userPassword = getPassNew(4)
     println("Запомните Ваш пароль $userPassword \n")
 
     println("АВТОРИЗАЦИЯ\nВведите Ваш ЛОГИН и ПАРОЛЬ")
@@ -39,8 +39,8 @@ fun checkingData(strPrint: String, searchStr: String): Boolean {
     return searchStr == readln()
 }
 
-fun checkString(strName: String): Boolean = (strName.length < 4)
-fun getPass(passLen: Int): String {
+//fun checkString(strName: String): Boolean = (strName.length < 4)
+fun getPassNew(passLen: Int): String {
     val rangeDigit = 33..126
     var passOut = ""
 
