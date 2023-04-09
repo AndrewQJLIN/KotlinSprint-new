@@ -3,7 +3,7 @@ package Lesson12_Task5
 import java.time.LocalDate
 
 class DayWeatherCalc(
-    val dayName: LocalDate,
+    var dayName: LocalDate,
     var tempDay: Int,
     var tempNight: Int,
     var rainIsIn: Int = 0,
