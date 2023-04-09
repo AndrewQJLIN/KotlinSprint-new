@@ -7,8 +7,8 @@ fun main() {
     day1.printData()
     day2.printData()
 
-    day1.atmosPressure = 739
-    day2.atmosPressure = 790
+    day1.atmosPressure  = 739
+    day2.atmosPressure  = 790
     day1.tempDay = 23
     day2.tempNight = -5
     day1.rainIsIn = if(day1.rainIsIn == 0 ) 1 else 0

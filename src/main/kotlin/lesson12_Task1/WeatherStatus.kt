@@ -13,8 +13,8 @@ class WeatherStatus() {
         println("""Состояние погоды на ${dayName}:
             |Температура днем: ${tempDay}°С
             |Температура днем: ${tempNight}°С
-            |Дождь был: ${if(rainIsIn == 0) "Нет" else "Да"}
-            |Атосферное давление: ${atmosPressure} мм.рт.ст
+            |Дождь был: ${if(rainIsIn == 0) "Нет" else "Да" }
+            |Атосферное давление: ${atmosPressure} мм.рт.ст 
             |
         """.trimMargin())
     }
