@@ -1,7 +1,3 @@
-import Lesson11_Task3.Account
-import Lesson11_Task3.Lenta
-import Lesson11_Task3.Room
-
 fun main() {
     val newLenta = Lenta()
     val user1 = Account("ГРИФ", badge = "я босс", status = "разговаривает")
@@ -28,4 +24,25 @@ fun main() {
     )
 
     newLenta.listRooms = mutableListOf(greenRoom, redRoom, whiteRoom)
+}
+
+class Account(
+    val avatar: String,
+    val badge: String,
+    val status: String,
+) {
+}
+
+class Lenta(
+    var listRooms: MutableList<Room> = mutableListOf<Room>()
+) {
+}
+
+class Room(
+    val imageRoom: String,
+    val nameRoom: String,
+    val listAccount: MutableList<Account> = mutableListOf<Account>(),
+) {
+
+
 }
