@@ -15,6 +15,7 @@ fun main() {
     )
     println(printData(userOne))
     println(printData(userTwo))
+
 }
 
 fun printData(user: User): String {
