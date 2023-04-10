@@ -9,8 +9,7 @@ class ContactPhone2(
     private val phoneNumber: Long,
     private val phoneName: String,
     private var companyName: String? = null,
-
-    ) {
+) {
     fun printContact() {
         println("Имя: $phoneName\nНомер: $phoneNumber\nКомпания: ${companyName ?: "[не указано]"} \n")
     }
