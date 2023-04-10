@@ -1,16 +1,15 @@
 package Lesson13_4
 
 fun main() {
-    var contactsList = mutableListOf<ContactPhone4>()
+    val contactsList = mutableListOf<ContactPhone4>()
 
     for (i in 1..3) {
         contactsList += ContactPhone4(
-            phoneNumber = if ((0..5).random() != 1) (8_000_000_00_00..8_999_999_99_99).random() else null,
+            phoneNumber = (8_000_000_00_00..8_999_999_99_99).random(),
             phoneName = if ((0..4).random() != 1) getName(6) else null,
             companyName = if ((0..3).random() != 1) getCompany(4, 6) else null,
         )
     }
-
 
     do {
         println("Если хотите добавить новую запись, введите \"да\"")
@@ -20,17 +19,15 @@ fun main() {
         } else break
     } while (true)
 
-
     contactsList.forEach { it.printContact() }
 }
 
 
 fun getNewContact(): ContactPhone4? {
-    val newContact = ContactPhone4(null, null, null)
+    val newContact = ContactPhone4(phoneName = null, companyName = null)
     println("Введите имя контакта")
     newContact.phoneName = readln()
     if (newContact.phoneName == "") newContact.phoneName = null
-
 
     newContact.phoneNumber = getInputPhoneNumber() ?: return null
 
@@ -65,10 +62,7 @@ fun getInputPhoneNumber(): Long? {
                 }
             }
         }
-
-
     } while (true)
-
 }
 
 fun getName(maxSize: Int): String {
@@ -82,4 +76,14 @@ fun getName(maxSize: Int): String {
 
 fun getCompany(first: Int, second: Int): String {
     return "${getName(first)} ${getName(second)}"
+}
+
+class ContactPhone4(
+    var phoneNumber: Long = 8_000_000_00_00,
+    var phoneName: String?,
+    var companyName: String?,
+    ) {
+    fun printContact() {
+        println("Имя: ${phoneName ?: "[не указано]"} Номер: $phoneNumber Компания: ${companyName ?: "[не указано]"}")
+    }
 }
