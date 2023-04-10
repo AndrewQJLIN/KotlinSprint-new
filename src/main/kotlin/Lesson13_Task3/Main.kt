@@ -33,6 +33,6 @@ class PhoneContact3(
     private var companyName: String?,
 ) {
     fun printContact() {
-        println("Имя: ${phoneName ?: "[не указано]"}\nНомер: ${phoneNumber ?: "[не указано]"}\nКомпания: ${companyName ?: "[не указано]"}\n")
+        println("Имя: ${phoneName ?: "[не указано]"}\nНомер: $phoneNumber\nКомпания: ${companyName ?: "[не указано]"}\n")
     }
 }
