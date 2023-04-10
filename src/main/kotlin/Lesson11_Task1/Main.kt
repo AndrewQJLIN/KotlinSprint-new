@@ -17,12 +17,13 @@ fun main() {
     println(printData(userTwo))
 }
 
-fun printData(user:User):String {
+fun printData(user: User): String {
     return "ID = ${user.id}, LOGIN = ${user.login}, PASSWORD = ${user.password}, EMAIL = ${user.eMail}"
 }
-class User (
-    val id:Int,
-    val login:String,
-    val password:String,
-    val eMail:String,
+
+class User(
+    val id: Int,
+    val login: String,
+    val password: String,
+    val eMail: String,
 )
