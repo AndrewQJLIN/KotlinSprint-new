@@ -20,9 +20,9 @@ fun main() {
 
 open class BaseShip(
     val shipName: String,
-    private val shipSpeed: Int,
-    private val shipLoadCapacity: Int,
-    private val dateIssue: Int,
+    val shipSpeed: Int,
+    val shipLoadCapacity: Int,
+    val dateIssue: Int,
 ) {
     fun shipSpeed() {
         println("\"$shipName\" движеться со скоростью $shipSpeed узлов")
