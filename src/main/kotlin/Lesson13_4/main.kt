@@ -82,7 +82,7 @@ class ContactPhone4(
     var phoneNumber: Long = 8_000_000_00_00,
     var phoneName: String?,
     var companyName: String?,
-    ) {
+) {
     fun printContact() {
         println("Имя: ${phoneName ?: "[не указано]"} Номер: $phoneNumber Компания: ${companyName ?: "[не указано]"}")
     }
