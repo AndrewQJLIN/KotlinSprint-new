@@ -19,10 +19,10 @@ fun main() {
 
 class DayWeather(
     val dayName: LocalDate,
-    var tempDay: Int,
-    var tempNight: Int,
-    var rainIsIn: Int = 0,
-    var atmosPressure: Int,
+    val tempDay: Int,
+    val tempNight: Int,
+    private val rainIsIn: Int = 0,
+    val atmosPressure: Int,
 ) {
     fun printData() {
         println(
