@@ -8,9 +8,11 @@ fun main() {
 
     val planet1 = Planet(
         name = "RADUGA", sputnik = listOf(sputnik1, sputnik2, sputnik3), athmosStatus = true,
-        waterPresent = true
+        waterPresent = true, liveStatus = false, takeOffStatus = true
     )
     planet1.printPlanetInfo()
+    println()
+    sputnik1.printPlanetInfo()
 }
 
 open class CosmosBody(
@@ -18,8 +20,9 @@ open class CosmosBody(
     val liveStatus: Boolean = false,
     val waterPresent: Boolean = false,
     val takeOffStatus: Boolean = false,
-    open val name: String
+    val name: String
 ) {
+
 
     open fun printPlanetInfo() {
         println(
@@ -35,10 +38,10 @@ open class CosmosBody(
 
 class Planet(
     name: String,
-    athmosStatus: Boolean = false,
-    liveStatus: Boolean = false,
-    waterPresent: Boolean = false,
-    takeOffStatus: Boolean = false,
+    athmosStatus: Boolean,
+    liveStatus: Boolean,
+    waterPresent: Boolean,
+    takeOffStatus: Boolean,
     val sputnik: List<Sputnik>
 ) : CosmosBody(
     name = name,
@@ -47,6 +50,7 @@ class Planet(
     waterPresent = waterPresent,
     takeOffStatus = takeOffStatus
 ) {
+
     override fun printPlanetInfo() {
         println("ПЛАНЕТА - $name")
         super.printPlanetInfo()
