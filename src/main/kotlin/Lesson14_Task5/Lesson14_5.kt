@@ -20,54 +20,54 @@ fun main() {
     val trian2 = Triangle(15.3, 10.7, 6.9, "GREEN")
     figureList += trian2
 
-    println("Сумма периметров фигур цвета RED = ${sumOfPerimeters(figureList,"RED")}")
-    println("Сумма площадей фигур цвета RED = ${sumOfSquares(figureList,"RED")}")
+    println("Сумма периметров фигур цвета RED = ${calculateSumPerimeters(figureList, "RED")}")
+    println("Сумма площадей фигур цвета RED = ${calculateSumSquares(figureList, "RED")}")
 
 }
 
-fun sumOfPerimeters(figureList: MutableList<Figure>, color: String):Double {
+fun calculateSumPerimeters(figureList: List<Figure>, color: String): Double {
 
     var result = 0.0
-    figureList.filter {it.color==color}.forEach{ result += it.perimetrCalc() }
-        return result
-    }
-
-
-fun sumOfSquares(figureList: MutableList<Figure>, color: String):Double {
-    var result = 0.0
-    figureList.filter {it.color==color}.forEach{ result += it.squareCalc() }
+    figureList.filter { it.color == color }.forEach { result += it.perimetrCalculated() }
     return result
 }
-abstract class Figure(val color: String) {
 
-    abstract fun squareCalc(): Double
-    abstract fun perimetrCalc(): Double
+
+fun calculateSumSquares(figureList: List<Figure>, color: String): Double {
+    var result = 0.0
+    figureList.filter { it.color == color }.forEach { result += it.squareCalculated() }
+    return result
+}
+
+abstract class Figure(val color: String) {
+    abstract fun squareCalculated(): Double
+    abstract fun perimetrCalculated(): Double
 }
 
 class Circle(
     private val radius: Double,
     color: String
 ) : Figure(color = color) {
-    override fun squareCalc(): Double {
+    override fun squareCalculated(): Double {
         return radius * radius * 3.14
     }
 
-    override fun perimetrCalc(): Double {
+    override fun perimetrCalculated(): Double {
         return 2 * 3.14 * radius
     }
 }
 
 class Rectangle(
     private val width: Double,
-    private val heith: Double,
+    private val heigth: Double,
     color: String
 ) : Figure(color = color) {
-    override fun squareCalc(): Double {
-        return width * heith
+    override fun squareCalculated(): Double {
+        return width * heigth
     }
 
-    override fun perimetrCalc(): Double {
-        return (width + heith) * 2
+    override fun perimetrCalculated(): Double {
+        return (width + heigth) * 2
     }
 
 }
@@ -78,13 +78,12 @@ class Triangle(
     private val sideC: Double,
     color: String
 ) : Figure(color = color) {
-    override fun squareCalc(): Double {
-        val poluPerimetr: Double = perimetrCalc() / 2
+    override fun squareCalculated(): Double {
+        val poluPerimetr: Double = perimetrCalculated() / 2
         return sqrt(poluPerimetr * (poluPerimetr - sideA) * (poluPerimetr - sideB) * (poluPerimetr - sideC))
     }
 
-    override fun perimetrCalc(): Double {
+    override fun perimetrCalculated(): Double {
         return sideA + sideB + sideC
     }
-
 }
