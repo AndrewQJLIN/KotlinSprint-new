@@ -6,14 +6,14 @@ fun main() {
     val ship2 = BaseShip("Игорь Светлов", 100, 3000)
 
 
-    ship1.shipSpeed()
-    ship1.shipLoadValue()
+    ship1.getShipSpeed()
+    ship1.printShipLoadValue()
     println()
-    ship2.shipSpeed()
-    ship2.shipLoadValue()
+    ship2.getShipSpeed()
+    ship2.printShipLoadValue()
     println()
-    ship1.iceBreakerStatus()
-    ship2.iceBreakerStatus()
+    ship1.printIceBreakerStatus()
+    ship2.printIceBreakerStatus()
 
 }
 
@@ -23,15 +23,15 @@ class BaseShip(
     private val shipLoadCapacity: Int,
     private val iceBreaker: Boolean = false
 ) {
-    fun shipSpeed() {
+    fun getShipSpeed() {
         println("\"$shipName\" движеться со скоростью $shipSpeed узлов")
     }
 
-    fun shipLoadValue() {
+    fun printShipLoadValue() {
         println("\"$shipName\" перевозит $shipLoadCapacity ящиков груза")
     }
 
-    fun iceBreakerStatus() {
+    fun printIceBreakerStatus() {
         println("\"$shipName\" - ${if (iceBreaker) "ледокол" else "корабль тёплых широт"}")
     }
 
