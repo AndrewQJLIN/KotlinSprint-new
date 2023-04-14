@@ -1,6 +1,5 @@
 package Lesson15_3
 
-import Lesson14_3.MessageOnForum
 
 fun main() {
 
@@ -43,7 +42,7 @@ class OneMessageOnForum(
     }
 }
 
-class Forum() {
+class Forum {
     val usersOnForum: MutableList<UserForum> = mutableListOf()
     val listMessages: MutableList<OneMessageOnForum> = mutableListOf()
 
@@ -60,7 +59,7 @@ class Forum() {
     }
 }
 
-abstract class UserForum() {
+abstract class UserForum {
     abstract val userId: Int
     abstract val userName: String
     abstract val forum: Forum
