@@ -1,5 +1,7 @@
 package Lesson15_3
 
+import Lesson14_3.MessageOnForum
+
 fun main() {
 
     val newForum = Forum()
@@ -28,8 +30,6 @@ fun main() {
 
     newForum.printAllMessage()
     println()
-
-
 }
 
 
@@ -38,7 +38,6 @@ class OneMessageOnForum(
     val messageStr: String,
     val id: Int
 ) {
-
     fun printOneMessage() {
         println("Author: ${author.userName}\nMessage:($id) $messageStr")
     }
@@ -115,10 +114,11 @@ class AdminUser(override val userId: Int, override val userName: String, overrid
 
     fun removeMessageForum(messageId: Int) {
 
-        val deleteMessage = forum.listMessages.filter { it.id == messageId }[0]
-        println("Админ удаляет сообщение ${deleteMessage.messageStr} от автора ${deleteMessage.author.userName}")
-        forum.listMessages.remove(deleteMessage)
+        val deleteMessage = forum.listMessages.firstOrNull() { it.id == messageId }
+        if (deleteMessage != null) {
+            println("Админ удаляет сообщение ${deleteMessage.messageStr} от автора ${deleteMessage.author.userName}")
+            forum.listMessages.remove(deleteMessage)
+        }
     }
-
 }
 
