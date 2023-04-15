@@ -13,15 +13,18 @@ fun main() {
         PassangersCar(180, "А001АА130"),
         PassangersCar(160, "У333ХХ120")
     )
+    println("************А В Т О  -  П А Р К**************")
     autoParkTrack.forEach { it.moveCar() }
     autoParkPass.forEach { it.moveCar() }
 
-    var goodsNeedTransfer = 2
-    var peopleNeedTransfer = 6
+    println("Введите сколько ТОНН ГРУЗА надо перевести (число)")
+    var goodsNeedTransfer = readln().toInt()
+    println("Введите сколько ЛЮДЕЙ надо перевести (число)")
+    var peopleNeedTransfer = readln().toInt()
     var i = 0
     do {
         if (i > autoParkTrack.size - 1) {
-            println("Не хватает грузовиков")
+            println("Не хватает грузовиков! Осталось перевезти еще $goodsNeedTransfer тонн")
             break
         }
         var loadGoods = 0
@@ -38,7 +41,7 @@ fun main() {
     i = 0
     do {
         if (i > autoParkPass.size - 1) {
-            println("Не хватает пассажирских машин")
+            println("Не хватает пассажирских машин! Осталость перевезти еще $peopleNeedTransfer пассажиров")
             break
         }
         var loadPeople = 0
@@ -65,7 +68,7 @@ open class Car(open val maxSpeed: Int, val govNumber: String) : Movable {
 class PassangersCar(maxSpeed: Int, govNumber: String) : Car(maxSpeed = maxSpeed, govNumber = govNumber),
     PeopleTransfer {
     override fun moveCar() {
-        println("Это пассажирский авто")
+        println("Пассажирский авто: (перевозит за раз до 3-х человек)")
         super.moveCar()
     }
 
@@ -81,7 +84,7 @@ class TrackCar(maxSpeed: Int, govNumber: String) : Car(maxSpeed = maxSpeed, govN
     }
 
     override fun moveCar() {
-        println("Это грузовик")
+        println("Грузовик: (перевозит за раз до 2-х тонн груза и 1 человека)")
         super.moveCar()
     }
 
