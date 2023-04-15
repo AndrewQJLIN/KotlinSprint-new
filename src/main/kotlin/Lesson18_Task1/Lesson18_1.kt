@@ -12,7 +12,7 @@ fun main() {
         OrderOneItem(5697, "Игра"),
         OrderMultiItem(432, listOf("Соль", "Спички", "Мыло")),
         OrderMultiItem(1432, listOf("Масло", "Яйца", "Хлеб")),
-        OrderMultiItem(4132, listOf("Гитара", "Барабан", "Рында")),
+        OrderMultiItem(4132, listOf("Гитара", "Барабан", "Рында","Скрипка")),
         OrderMultiItem(4322, listOf("1", "2", "3")),
     )
 
