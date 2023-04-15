@@ -21,48 +21,46 @@ fun main() {
     var goodsNeedTransfer = readln().toInt()
     println("Введите сколько ЛЮДЕЙ надо перевести (число)")
     var peopleNeedTransfer = readln().toInt()
-    var i = 0
-    do {
-        if (i > autoParkTrack.size - 1) {
-            println("Не хватает грузовиков! Осталось перевезти еще $goodsNeedTransfer тонн")
-            break
-        }
-        var loadGoods = 0
-        var loadPeople = 0
-        loadGoods = if (goodsNeedTransfer >= 2) 2 else goodsNeedTransfer
-        autoParkTrack[i].goodsTransfer(loadGoods)
-        loadPeople = if (peopleNeedTransfer >= 1) 1 else 0
-        autoParkTrack[i].peopleTransfer(loadPeople)
-        i++
-        goodsNeedTransfer -= 2
-        peopleNeedTransfer -= 1
-    } while (goodsNeedTransfer > 0)
 
-    i = 0
-    do {
-        if (i > autoParkPass.size - 1) {
-            println("Не хватает пассажирских машин! Осталость перевезти еще $peopleNeedTransfer пассажиров")
-            break
-        }
-        var loadPeople = 0
-        loadPeople = if (peopleNeedTransfer >= 3) {
-            3
+
+    autoParkTrack.forEachIndexed { _, trackCar ->
+        if (goodsNeedTransfer >= 2) {
+            trackCar.goodsTransfer(2); goodsNeedTransfer -= 2
+            if (peopleNeedTransfer >= 1) {
+                trackCar.peopleTransfer(1); peopleNeedTransfer--
+            }
         } else {
-            peopleNeedTransfer
+            if (goodsNeedTransfer == 1) {
+                trackCar.goodsTransfer(1); goodsNeedTransfer = 0
+                if (peopleNeedTransfer >= 1) {
+                    trackCar.peopleTransfer(1); peopleNeedTransfer--
+                }
+            }
         }
-        autoParkPass[i++].peopleTransfer(loadPeople)
-        peopleNeedTransfer -= 3
-    } while (peopleNeedTransfer > 0)
+    }
+    if (goodsNeedTransfer > 0) println("Не хватает грузовиков! Осталось перевезти еще $goodsNeedTransfer тонн")
 
-
+    autoParkPass.forEachIndexed { _, passCar ->
+        if (peopleNeedTransfer >= 3) {
+            passCar.peopleTransfer(3); peopleNeedTransfer -= 3
+        } else {
+            if (peopleNeedTransfer >= 2) {
+                passCar.peopleTransfer(2); peopleNeedTransfer -= 2
+            } else {
+                if (peopleNeedTransfer >= 1) {
+                    passCar.peopleTransfer(1); peopleNeedTransfer = 0
+                }
+            }
+        }
+    }
+    if (peopleNeedTransfer > 0)
+        println("Не хватает пассажирских машин! Осталость перевезти еще $peopleNeedTransfer пассажиров")
 }
 
 open class Car(open val maxSpeed: Int, val govNumber: String) : Movable {
     override fun moveCar() {
         println("г/н $govNumber - его максимальная скорость $maxSpeed км/ч")
     }
-
-
 }
 
 class PassangersCar(maxSpeed: Int, govNumber: String) : Car(maxSpeed = maxSpeed, govNumber = govNumber),
@@ -73,6 +71,7 @@ class PassangersCar(maxSpeed: Int, govNumber: String) : Car(maxSpeed = maxSpeed,
     }
 
     override fun peopleTransfer(countPeople: Int) {
+        if (countPeople <= 0) return
         println("Авто г/н $govNumber - перевез $countPeople человек")
     }
 }
@@ -80,6 +79,7 @@ class PassangersCar(maxSpeed: Int, govNumber: String) : Car(maxSpeed = maxSpeed,
 class TrackCar(maxSpeed: Int, govNumber: String) : Car(maxSpeed = maxSpeed, govNumber = govNumber), PeopleTransfer,
     GoodsTransfer {
     override fun goodsTransfer(countTonn: Int) {
+        if (countTonn <= 0) return
         println("Авто г/н $govNumber - перевез $countTonn тонн груза")
     }
 
@@ -89,6 +89,7 @@ class TrackCar(maxSpeed: Int, govNumber: String) : Car(maxSpeed = maxSpeed, govN
     }
 
     override fun peopleTransfer(countPeople: Int) {
+        if (countPeople <= 0) return
         println("Авто г/н $govNumber - перевез $countPeople человек")
     }
 }
