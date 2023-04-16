@@ -18,7 +18,8 @@ class Player(
     private val name: String,
     private var health: Int,
     private var force: Int,
-    private var healingStatus: Boolean = true
+    private var healingStatus: Boolean = true,
+    private val maxHealth: Int = health
 ) {
     fun getHealingStatus(): Boolean = healingStatus
     fun currentStatus() {
@@ -28,7 +29,8 @@ class Player(
 
     fun getDamage(damage: Int) {
         println("Получение урона на $damage")
-        health += damage
+
+        health -= damage * (-1)
         if (health <= 0) {
             println("Игрок умирает!")
             death()
@@ -40,6 +42,7 @@ class Player(
     fun getHealing(healing: Int) {
         if (healingStatus) {
             health += healing
+            if (health > maxHealth) health = maxHealth
             println("Пополнение здоровья на +$healing. ЗДОРОВЬЕ = $health")
         }
     }
