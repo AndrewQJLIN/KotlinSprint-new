@@ -23,7 +23,7 @@ fun main() {
     var peopleNeedTransfer = readln().toInt()
 
 
-    autoParkTrack.forEachIndexed { _, trackCar ->
+    autoParkTrack.forEach { trackCar ->
         if (goodsNeedTransfer >= 2) {
             trackCar.goodsTransfer(2); goodsNeedTransfer -= 2
             if (peopleNeedTransfer >= 1) {
@@ -40,7 +40,7 @@ fun main() {
     }
     if (goodsNeedTransfer > 0) println("Не хватает грузовиков! Осталось перевезти еще $goodsNeedTransfer тонн")
 
-    autoParkPass.forEachIndexed { _, passCar ->
+    autoParkPass.forEach{ passCar ->
         if (peopleNeedTransfer >= 3) {
             passCar.peopleTransfer(3); peopleNeedTransfer -= 3
         } else {
