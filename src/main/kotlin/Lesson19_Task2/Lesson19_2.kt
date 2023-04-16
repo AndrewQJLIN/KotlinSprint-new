@@ -12,7 +12,6 @@ fun main() {
         Good("Телефон", 5065, Category.OTHERS),
     )
     listGood.forEach { it.printGoodInfo() }
-
 }
 
 class Good(
