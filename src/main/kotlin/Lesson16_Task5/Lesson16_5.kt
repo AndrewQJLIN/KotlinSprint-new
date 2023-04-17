@@ -1,5 +1,7 @@
 package Lesson16_Task5
 
+import kotlin.math.abs
+
 fun main() {
     val newPlayer = Player("Nik", 100, 20)
     do {
@@ -11,7 +13,7 @@ fun main() {
 fun battleRound(player: Player, healthChange: Int) {
     println("------ БОЙ!")
     if (healthChange > 0) player.getHealing(healthChange)
-    else player.getDamage(healthChange)
+    else player.getDamage(abs(healthChange))
 }
 
 class Player(
@@ -28,9 +30,9 @@ class Player(
     }
 
     fun getDamage(damage: Int) {
-        println("Получение урона на $damage")
 
-        health -= damage * (-1)
+        println("Получение урона на $damage")
+        health -= damage
         if (health <= 0) {
             println("Игрок умирает!")
             death()
