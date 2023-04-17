@@ -2,56 +2,28 @@ package Lesson18_Task2
 
 fun main() {
 
-    val listDices: List<DiceRoll> = listOf(
-        Dice4(),
-        Dice6(),
-        Dice8(),
-        Dice4(),
-        Dice6(),
-        Dice8(),
-        Dice4(),
-        Dice6(),
-        Dice8(),
+    val listDices: List<Dice> = listOf(
+        Dice(4),
+        Dice(6),
+        Dice(8)
     )
     listDices.forEach { it.printNumber() }
 }
 
-open class DiceRoll {
+abstract class DiceRoll(val countEdge: Int) {
     var resultNumber: Int = 0
     open fun printNumber() {
         println("На кубике выпало $resultNumber\n")
     }
 }
 
-class Dice4 : DiceRoll() {
+class Dice(count: Int) : DiceRoll(countEdge = count) {
     init {
-        resultNumber = (1..4).random()
+        resultNumber = (1..countEdge).random()
     }
 
     override fun printNumber() {
-        println("Это кубик на 4 грани")
-        super.printNumber()
-    }
-}
-
-class Dice6 : DiceRoll() {
-    init {
-        resultNumber = (1..6).random()
-    }
-
-    override fun printNumber() {
-        println("Это кубик на 6 граней")
-        super.printNumber()
-    }
-}
-
-class Dice8 : DiceRoll() {
-    init {
-        resultNumber = (1..8).random()
-    }
-
-    override fun printNumber() {
-        println("Это кубик на 8 граней")
+        println("Это кубик из $countEdge граней")
         super.printNumber()
     }
 }
