@@ -2,7 +2,7 @@ package Lesson17_Task5
 
 fun main() {
     val newUser = User("NIK", "123456")
-    var status = true
+
     do {
         println(
             """Что сделать? 
@@ -34,7 +34,7 @@ fun main() {
 
             else -> break
         }
-    } while (status)
+    } while (true)
 
 }
 
