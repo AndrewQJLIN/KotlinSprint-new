@@ -6,12 +6,12 @@ fun main() {
     repeat(5) {
 
         println("Введите имя:")
-        val name1 = readln()
+        val inputName = readln()
         println("Введите пол: 0 - женский, 1 - мужской, другой символ - не указывать")
 
         cardHolder.addUser(
             User(
-                name = name1, when (readln()) {
+                name = inputName, when (readln()) {
                     Sex.FEMALE.id -> Sex.FEMALE
                     Sex.MALE.id -> Sex.MALE
                     else -> Sex.UNDEFINED
@@ -25,7 +25,7 @@ fun main() {
 class User(private val name: String, private val sex: Sex) {
     fun getUser(): String = """
         ИМЯ: $name
-        ПОЛ: ${sex.getSex()}
+        ПОЛ: ${sex.sex}
         
     """.trimIndent()
 }
@@ -44,16 +44,8 @@ class CardHolder() {
     }
 }
 
-enum class Sex(val id: String) {
-    FEMALE("0") {
-        override fun getSex(): String = "ЖЕНСКИЙ"
-    },
-    MALE("1") {
-        override fun getSex(): String = "МУЖСКОЙ"
-    },
-    UNDEFINED("") {
-        override fun getSex(): String = "ПОЛ НЕ УКАЗАН"
-    };
-
-    abstract fun getSex(): String
+enum class Sex(val id: String, val sex: String) {
+    FEMALE("0", "ЖЕНСКИЙ"),
+    MALE("1", "МУЖСКОЙ"),
+    UNDEFINED("", "ПОЛ НЕ УКАЗАН");
 }
