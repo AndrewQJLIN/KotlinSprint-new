@@ -10,7 +10,6 @@ fun main() {
         "law", "chalk", "manager", "after",
         "again", "all", "and", "animal",
     )
-
-    listString.map { it: String -> "Нажат элемент $it" }
-        .forEachIndexed { index, unit -> if (index % 2 == 0) println(unit) }
+    val listLambda: List<() -> Unit> = listString.map { it: String -> { println("Нажат элемент $it") } }
+    listLambda.forEachIndexed { index, unit -> if (index % 2 == 0) unit() }
 }
