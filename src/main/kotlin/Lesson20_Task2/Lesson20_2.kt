@@ -13,7 +13,7 @@ class Player(
     private var currentHealth: Int,
     private val maxHealth: Int
 ) {
-    val potionAccepted = fun() = run {
+    val potionAccepted = {
         println("I get potion accepted!")
         currentHealth = maxHealth
     }
