@@ -3,6 +3,20 @@ package Lesson20_Task5
 import java.lang.reflect.Modifier
 
 fun main() {
+
+    val robot = Robot()
+    repeat(5) {
+        robot.say(robot.strTexts[it])
+    }
+    robot.myModifier = robot.setModifier()
+
+    repeat(5) {
+        robot.say(robot.strTexts[it])
+    }
+}
+
+class Robot {
+
     val strTexts: List<String> = listOf(
         "Привет! я Робот",
         "Я умею писаьт и читать",
@@ -10,22 +24,10 @@ fun main() {
         "Ландэн из зэ кэпитал ов грейт британ",
         "как прекрасен этот мир - посмотри"
     )
-    val robot = Robot()
-    val inverterModifier: (String) -> Unit = fun(str: String) { println("ИНВЕРТИРУЮ: ${str.reversed()}") }
-
-    strTexts.forEach {
-        robot.say(it)
-        robot.setModifier(it, inverterModifier)
-        println()
-    }
-}
-
-class Robot {
+    var myModifier: (String) -> String = { it }
     fun say(text: String) {
-        println("Robot говорит: $text")
+        println("Robot говорит: ${myModifier(text)}")
     }
 
-    fun setModifier(input: String, modifier: (String) -> Unit) {
-        modifier(input)
-    }
+    fun setModifier(): (String) -> String = { it.reversed() }
 }
