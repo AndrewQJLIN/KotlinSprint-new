@@ -11,7 +11,7 @@ class SpaceShip {
     }
 
     fun landing() {
-        TODO()
+        //TODO() надо что то сделать
     }
 
     fun shootingAsteroids() {
