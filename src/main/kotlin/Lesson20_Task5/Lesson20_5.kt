@@ -5,14 +5,11 @@ import java.lang.reflect.Modifier
 fun main() {
 
     val robot = Robot()
-    repeat(5) {
-        robot.say(robot.strTexts[it])
-    }
+    val outText = robot.strTexts.random()
+    robot.say(outText)
     robot.myModifier = robot.setModifier()
+    robot.say(outText)
 
-    repeat(5) {
-        robot.say(robot.strTexts[it])
-    }
 }
 
 class Robot {
